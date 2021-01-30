@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-import javax.lang.model.util.ElementScanner6;
-import javax.print.attribute.standard.NumberUpSupported;
-
 class Main {
   public static void main(String[] args) {
+    //Setting Up Scanner to read User Input
     Scanner s = new Scanner(System.in);
     System.out.println("Enter number to count down or up from");
 
+    //Setting up variables
     int number = s.nextInt();
     int countdown;
     int countup;
 
+    //Countdown from a positive Input
     if (number >= 0){
     for (countdown = number; countdown>=0; countdown--) {
       System.out.println(countdown);
@@ -20,6 +20,7 @@ class Main {
       }
     }
     }
+    //Countup from a Negative Input
     if (number <= 0){
     for (countup = number; countup <= 0; countup++){
       System.out.println(countup);
