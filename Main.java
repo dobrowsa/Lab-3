@@ -11,24 +11,15 @@ class Main {
     int countdown;
     int countup;
 
-    //Countdown from a positive Input
-    if (number >= 0){
+    //Countdown from a Positive Input
     for (countdown = number; countdown>=0; countdown--) {
       System.out.println(countdown);
-      if (countdown == 0){
-        System.out.println("Blast Off!");
-      }
     }
-    }
+
     //Countup from a Negative Input
-    if (number <= 0){
     for (countup = number; countup <= 0; countup++){
       System.out.println(countup);
-    if (countup == 0){
-      System.out.println("Blast Off!");
-      }
-      }
     }
-    }
+    System.out.println("Blast Off!");    
   }
-
+}
